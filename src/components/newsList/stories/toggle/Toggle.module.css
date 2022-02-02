@@ -1,0 +1,20 @@
+.container {
+  border-top: 1px solid #38393d;
+  padding: 30rem 0;
+  position: relative;
+}
+.username {
+  text-decoration: underline;
+  color: #ff3e00;
+  font-size: 12rem;
+  display: block;
+  /* margin-top: 16rem; */
+  margin-left: 16rem;
+}
+.time {
+  position: absolute;
+  color: #838489;
+  font-size: 12rem;
+  left: 80rem;
+  top: 31rem;
+}

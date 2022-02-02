@@ -1,0 +1,12 @@
+.dailyNews {
+  background-color: #18191e;
+  width: 360rem;
+  padding-top: 64rem;
+}
+.dailyNewsTitle {
+  padding-left: 20rem;
+  padding-top: 20rem;
+  padding-bottom: 24rem;
+  font-size: 28rem;
+  /* color: #fff; */
+}

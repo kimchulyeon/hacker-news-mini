@@ -1,0 +1,37 @@
+.navWrapper {
+  width: 360rem;
+  background-color: #18191e;
+  position: sticky;
+  top: 64rem;
+  z-index: 50;
+  overflow: hidden;
+}
+.nav {
+  width: 320rem;
+  margin: 0 auto;
+  /* margin-bottom: 12rem; */
+  /* padding-top: 28rem; */
+  height: 38rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18191e;
+  border-bottom: 1rem solid #6b6c70;
+}
+.nav div {
+  width: 77rem;
+  height: 37rem;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b6c70;
+  font-family: Product Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16rem;
+  line-height: 19rem;
+}
+.nav div:last-child {
+  margin-right: 0;
+}

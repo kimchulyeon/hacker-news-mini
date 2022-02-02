@@ -1,0 +1,15 @@
+.container {
+  width: 360rem;
+  min-height: 100vh;
+  color: #fff;
+  /* overflow: scroll;
+  -ms-overflow-style: none; */
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: Product Sans;
+  src: local('Product Sans');
+}

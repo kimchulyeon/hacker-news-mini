@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import styles from './App.module.css'
+import Header from './components/header/Header'
+import { Route, Link, Switch } from 'react-router-dom'
+import DailyNews from './components/dailyNews/DailyNews'
+import Nav from './components/nav/Nav'
 
-function App() {
+import TabMenu from './components/tabMenu/TabMenu'
+
+const App = () => {
+  const [newsList, setNewsList] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Switch>
+      <Route path="/">
+        {/* 홈 메뉴 */}
+        <div className={styles.container}>
+          <Header />
+          <DailyNews />
+          <Nav setNewsList={setNewsList} />
+          <TabMenu newsList={newsList} />
+        </div>
+      </Route>
+    </Switch>
+  )
 }
 
-export default App;
+export default App
